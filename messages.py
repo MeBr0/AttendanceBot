@@ -1,0 +1,12 @@
+GREETINGS = 'Hello there! From this moment I help you with your attendance managment!'
+ID = 'This is your ID: '
+SHARE = '. Share it with your students to realize attendance.'
+START_ATT = 'Attendance began. Choose your option for the lesson, with details if necessary.'
+STOP_ATT = 'Attendance ended!'
+ID_ENTER = "Enter your teacher`s ID."
+_YES = 'These students will be on lesson:\n'
+_NO_FAMILY = 'These students will be absent due to family troubles:\n'
+_NO_SLEEP = 'These students will be not awake on the lesson:\n'
+_NO_OTHER = 'These students will be absent due to own reasons:\n'
+_NO_HEALTH = 'These students will be absent because of illness:\n'
+_NO_ANSWER = 'These students did not answer at all:\n'
