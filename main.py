@@ -203,7 +203,7 @@ def write(res, msg, arr):
 		res += _NO_ANSWER
 
 	for i in arr[msg]:
-		if len(names.search*Query().id == i)) != 0:
+		if len(names.search(Query().id == i)) != 0:
 			b = names.search(Query().id == i)[0]
 			res += b['name'] + '\n'
 
