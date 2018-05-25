@@ -50,10 +50,10 @@ def welcome(message):
 	bot.send_message(message.chat.id, GREETINGS, reply_markup=markup)
 	first = ''
 	second = ''
-	if mesasage.from_user.first_name != None:
-		first = mesasage.from_user.first_name
-	if mesasage.from_user.last_name != None:
-		second = mesasage.from_user.first_name
+	if message.from_user.first_name != None:
+		first = message.from_user.first_name
+	if message.from_user.last_name != None:
+		second = message.from_user.first_name
 	
 	names.insert({"name": first + " " + second, "id": str(message.chat.id)})
 
