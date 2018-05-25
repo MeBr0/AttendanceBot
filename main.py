@@ -48,7 +48,14 @@ markupS.row(item6)
 @bot.message_handler(commands = ['start'])
 def welcome(message):
 	bot.send_message(message.chat.id, GREETINGS, reply_markup=markup)
-	names.insert({"name": message.from_user.first_name + " " + message.from_user.last_name, "id": str(message.chat.id)})
+	first = ''
+	second = ''
+	if mesasage.from_user.first_name != None:
+		first = mesasage.from_user.first_name
+	if mesasage.from_user.last_name != None:
+		second = mesasage.from_user.first_name
+	
+	names.insert({"name": first + " " + second, "id": str(message.chat.id)})
 
 @bot.message_handler(regexp = 'Origin')
 def origin(message):
