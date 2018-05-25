@@ -141,6 +141,9 @@ def result(message):
 		res = write(res, NO_OTHER, a)
 	if len(a[NO_ANSWER]) != 0:
 		res = write(res, NO_ANSWER, a)
+		
+	if res == '':
+		res = "Empty"
 
 	bot.send_message(message.chat.id, res, reply_markup = markup)
 
